@@ -74,6 +74,7 @@ main{
 }
 .sponsors-img img{
     width: 5rem; 
+    height: 100%;
     margin-bottom: 1rem;
 }
 .resume {

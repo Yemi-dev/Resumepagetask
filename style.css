@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-image: url('https://cdn.wallpapersafari.com/41/17/SG14UK.jpg');
+}
+nav{
+    background:whitesmoke;
+}
+.active-link {
+    background-color:rgb(51, 116, 139);
+    font-size: 1rem;
+    border-radius: 5px;
+    color: white;
+}
+main{
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(54, 54, 54);
+}
+.info-main{
+    width: 25%;
+    position: relative;
+    padding-top: 10rem;
+    height: fit-content;
+    padding-bottom: 2rem;
+    
+}
+.card-img {
+    border: whitesmoke;
+    border-radius: 20%;
+    width: 60%;
+    position: absolute;
+    top: -6rem;
+    right: 20%;
+}
+.role {
+    background:rgba(245, 245, 245, 0.596);
+    color: gray
+}
+.socials{
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+}
+.socials .iconify{
+   font-size: 1.5rem;
+   color:rgb(51, 116, 139);
+}
+.info-contact {
+    border-radius: 10px;
+}
+.infos {
+    display: flex;
+    justify-content: space-between;
+}
+.infos p{
+    font-size: .8rem;
+}
+.infos .iconify{
+    font-size: 1.5rem;
+    color:rgb(51, 116, 139);
+}
+.about-main {
+    width: 65%;
+    padding: 1rem 3rem;
+}
+.sponsors-img {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.sponsors-img img{
+    width: 5rem; 
+    margin-bottom: 1rem;
+}
+.resume {
+    margin: 1rem 0;
+}
+.resume-border {
+    width: 3rem;
+    height: .4rem;
+    border-radius: 10px;
+    background-color: rgb(51, 116, 139);
+}
+.about-history {
+    display: flex;
+    justify-content: space-between;
+}
+.about-education, .about-experience{
+    width: 48%;
+}
+.about-history-header{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0; 
+}
+.about-history-header .educ{
+    font-size: 1.7rem;
+    color:rgb(51, 116, 139);
+}
+.edu {
+    width: 90%;
+}
+.hng{
+    display: flex;
+    justify-content: space-between;
+}
+.hng .pointer{
+    color:rgb(51, 116, 139);
+}
+.zuri-header{
+    width: 90%;
+}
+.zuri-header .date{
+    font-size: .8rem;
+}
+
+.about-skills {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+.skills{
+    width: 45%;
+}
+.skills-header {
+    display: flex;
+}
+.spanner {
+    font-size: 2rem;
+}
+.personal-skills, .coding-skills{
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+.skills-set{
+    display: flex;
+    justify-content: space-between;
+}
+.skills-set p{
+    width: 80%;
+}
+.skills-set .pointer{
+    color:rgb(51, 116, 139);
+    font-size: .8rem;
+    font-weight: 200;
+}
+
+@media only screen and (max-width: 768.98px){
+    .info-main{
+        width: 30%;
+        padding-top: 7rem;
+    }
+    .infos p{
+        font-size: .6rem;
+    }
+    .infos .iconify{
+        font-size: 1.2rem;
+    }
+
+}
+@media only screen and (max-width: 576px){
+    main{
+        flex-direction: column;
+      margin-top: 13rem;
+    }
+    .info-main{
+        width: 90%;
+        padding-top: 7rem;
+        margin-bottom: 2rem;
+
+    }
+    .card-img{
+        width: 40%; 
+        top: -9rem;
+        right: 30%;
+    }
+    .about-main{
+        width: 90%;
+        padding: 1rem;
+    }
+    .about-skills{
+        flex-direction: column;
+    }
+    .skills{
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+@media only screen and (max-width:420px){
+    main{
+        margin-top: 10rem;
+    }
+    .info-main{
+        padding-top: 6rem;
+    }
+    .card-img{
+        top: -6rem;
+    }
+    .about-history{
+        flex-direction: column;
+    }
+    .about-education, .about-experience{
+        width: 90%;  
+    }
+    .edu{
+        width: 80%;
+    }
+    .zuri-header{
+        width: 80%;
+    }
+}
+

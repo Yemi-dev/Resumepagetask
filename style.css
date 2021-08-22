@@ -63,7 +63,7 @@ main{
     height: fit-content;
     padding-bottom: 2rem;
     transform: translateX(-200px);
-    transition: transform 1s ease-in;
+    transition: transform 500ms ease-in;
     
     
 }

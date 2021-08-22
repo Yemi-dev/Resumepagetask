@@ -71,6 +71,7 @@ main{
     border: whitesmoke;
     border-radius: 20%;
     width: 60%;
+    max-width: 60%;
     object-fit: cover;
     position: absolute;
     top: -6rem;
@@ -98,6 +99,8 @@ main{
 .infos {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
 }
 .infos p{
     font-size: .8rem;
@@ -172,6 +175,7 @@ section {
     display: flex;
     justify-content: space-between;
     margin: 1rem 0; 
+    align-items: center;
 }
 .about-history-header .educ{
     font-size: 2.5rem;
@@ -229,6 +233,8 @@ section {
 .skills-set{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
 }
 .skills-set p{
     width: 40%;
@@ -317,6 +323,7 @@ section {
              color: white;
          }
      }
+    
      .port-header h6{
          font-size: 1.2rem;
          font-weight: 700;

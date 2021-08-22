@@ -100,11 +100,13 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem;
 }
 .infos p{
     font-size: .8rem;
     font-family: 'Cormorant Upright', serif;
+    padding: 0;
+    margin: 0;
 }
 .infos .iconify{
     font-size: 1.5rem;
@@ -186,6 +188,7 @@ section {
     font-size: 1.7rem;
     font-family: 'Cormorant Unicase', serif;
     font-weight: 800;
+    margin-bottom: 0;
 }
 .hng{
     /* display: flex;
@@ -234,10 +237,12 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
 }
 .skills-set p{
-    width: 40%;
+    width: 60%;
+    margin: 0;
+    padding: 0;
 }
 .skills-set .pointer{
     color:rgb(51, 116, 139);
@@ -245,7 +250,7 @@ section {
     font-weight: 200;
 }
 .stars {
-    display: flex;
+    display: none;
 }
 .stars .iconify{
     display: flex;
@@ -288,7 +293,7 @@ section {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        transform: translateY(-70px);
+        transform: translateY(-90px);
     }
     .side-nav li {
         list-style: none;
@@ -342,6 +347,9 @@ section {
          color:  rgb(51, 116, 139);
          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
      }
+     .port-header p {
+         line-height: 2rem;
+     }
      .contact {
         background-image: linear-gradient(to bottom, #659db1, #5c95aa, #538da2, #49869b, #407e94, #39758b, #316d82, #2a6479, #23596c, #1d4d5f, #164353, #103847);
         color: white;
@@ -373,9 +381,11 @@ section {
          font-size: 1.2rem;
          font-family: 'Cormorant Upright', serif;
          margin: 1.5rem 0;
+         align-items: center;
      }
      .email p {
          padding-left: 1.5rem;
+         margin-bottom: 0;
      }
 
      .contact .socials  .iconify{
@@ -388,6 +398,9 @@ section {
  
 
 @media only screen and (max-width: 768.98px){
+    nav{
+        padding:  0 2rem;
+    }
     .nav {
         display: none;
     }

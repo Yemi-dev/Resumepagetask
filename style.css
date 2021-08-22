@@ -107,8 +107,11 @@ main{
     font-size: 1.5rem;
     color:rgb(51, 116, 139);
 }
-.about-main {
-    width: 65%;
+section {
+ width: 65%;
+}
+.about-main{
+    width: 100%;
     padding: 1rem 5rem;
     transform: translateX(150px);
     transition: transform 2s ease-in;
@@ -135,13 +138,13 @@ main{
     height: .3rem;
     border-radius: 10px;
     background-color: rgb(51, 116, 139);
-    animation-name: width;
-    animation-duration: 3s;
+    animation-name: length;
+    animation-duration: 2s;
     animation-iteration-count: 3;
    
 
 }
-@keyframes width {
+@keyframes length {
     0% {width: 0;
         background-color: rgb(147, 196, 214);
     }
@@ -331,6 +334,45 @@ main{
          color:  rgb(51, 116, 139);
          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
      }
+     .contact {
+        background-image: linear-gradient(to bottom, #659db1, #5c95aa, #538da2, #49869b, #407e94, #39758b, #316d82, #2a6479, #23596c, #1d4d5f, #164353, #103847);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 30vh;
+     }
+     .reach-border {
+         width: 3rem;
+         height: 0.4rem;
+         background-image: linear-gradient(to right, #aac9d5, #a5c7d4, #a1c6d4, #9cc4d3, #97c2d2, #90bdce, #88b9cb, #81b4c7, #75abbf, #6aa2b8, #5e9ab0, #5291a9);
+         animation-name: width;
+         animation-duration: 2s;
+         animation-delay: 3s;
+        
+     }
+     @keyframes width {
+         0% {width: 0;
+            background-image: linear-gradient(to right, #aac9d5, #a5c7d4, #a1c6d4, #9cc4d3, #97c2d2, #90bdce, #88b9cb, #81b4c7, #75abbf, #7dadc0, #81aab9, #8ab2c2);
+         }
+         100% {
+             width: 3rem;
+             background-image: linear-gradient(to right, #aac9d5, #a5c7d4, #a1c6d4, #9cc4d3, #97c2d2, #90bdce, #88b9cb, #81b4c7, #75abbf, #6aa2b8, #5e9ab0, #5291a9);
+         }
+     }
+     .email {
+         font-size: 1.2rem;
+         font-family: 'Cormorant Upright', serif;
+         margin: 1.5rem 0;
+     }
+     .email p {
+         padding-left: 1.5rem;
+     }
+
+     .contact .socials  .iconify{
+         color: white;
+     }
 
      .footer small{
         font-size: .4rem;
@@ -343,6 +385,10 @@ main{
     }
     .burger-menu {
         display: block;
+    }
+    section {
+        width: 90%;
+        margin: 0 auto;
     }
     .info-main{
         width: 30%;
@@ -380,7 +426,7 @@ main{
         right: 20%;
     }
     .about-main{
-        width: 90%;
+        width: 100%;
         padding: 1rem;
     }
     .about-skills{

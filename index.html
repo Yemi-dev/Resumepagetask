@@ -12,45 +12,70 @@
 <body>
     <nav class="navbar navbar-expand-lg fixed-top pl-lg-5 pl-md-5 navbar-light shadow p-2 mb-5 rounded">
         <div class="container ">
-        <a class="navbar-brand text-muted" href="index.html"><h3>yemiDev</h3></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end pl-lg-5" id="navbarSupportedContent">
-          <ul class="nav">
-            <li class="nav-item active">
-              <a class="nav-link disabled" href="./index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">About Me</a>
-            </li>
-            <li class="nav-item ">
-              <a class="nav-link active-link" href="#">Resume</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Contact</a>
-            </li>
-          </ul>
+        <a class="navbar-brand text-muted" href="index.html"><h3>yemiDev</h3></a>  
+      <ul class="nav menu-bar">
+        <li class="nav-item active">
+          <a class="nav-link disabled" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active-link" href="index.html">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Contact</a>
+        </li>
+      </ul>
+   
+        <div class="burger-menu d-lg-none">
+            <div class="burger-menu-btn"><span class="iconify" data-icon="carbon:overflow-menu-vertical" style="color:#33748b;" data-width="70" data-height="50" data-rotate="180deg" data-flip="horizontal"></span></div>
         </div>
-      </div>
+        <div class="exit d-none">
+            <div class="exit-btn"><span class="iconify" data-icon="oi:fullscreen-exit" style="color: #33748b;" data-width="30" data-height="30" data-rotate="180deg" data-flip="horizontal"></span></div>
+        </div>
+     </div>
+     <ul class="side-nav d-none mx-auto">
+         <li>
+             <a href="#" class="link-item disabled text-muted" >
+                 Home
+             </a>
+         </li>
+         <li>
+             <a href="#" class="link-item disabled text-muted"> 
+                 About Me
+             </a>
+         </li>
+         <li>
+             <a href="index.html" class="link-item active-link ">
+                 Resume
+             </a>
+         </li>
+         <li>
+             <a href="#" class="link-item disabled text-muted">
+                 Contact
+             </a>
+         </li>
+     </ul>
       </nav>
 
       <main class="px-lg-5 p-2 mb-5">
-          <div class="container card shadow info-main">
-              <img class="card-img" src="yemi.jpeg" alt="img">
+          <div class="container card shadow info-main slide-in">
+              <img class="card-img " src="yemi.jpeg" alt="img">
              <div class="info">
                 <h4 class="text-center"> Akinyemi Oluwayemisi</h4>
-                <p class="text-center role">Frontend Developer</p>
+                <p class="text-center role mx-auto py-2 px-3">Frontend Developer</p>
              </div>
              <div class="socials text-center">
                 <span class="iconify" data-icon="typcn:social-facebook"></span>
                 <span class="iconify" data-icon="typcn:social-twitter"></span>
                 <span class="iconify" data-icon="typcn:social-linkedin"></span>
+                <span class="iconify" data-icon="codicon:github-inverted"</span>
              </div>
-             <div class="info-contact bg-light p-lg-3">
+             <div class="info-contact bg-light p-lg-3 p-md-3 p-sm-3">
                  <div class="infos dob">
                     <span class="iconify" data-icon="typcn:calendar"></span>
-                    <p>29.04.1997</p>
+                    <p>29.04</p>
                  </div>
                  <div class="infos location">
                     <span class="iconify" data-icon="typcn:location"></span>
@@ -78,69 +103,86 @@
                  </div>
              </div>
           </div>
-          <div class="container card about-main">
+
+          <div class="container card about-main fade-in">
               <div class="resume">
                 <h2 class="resume-header">Resume</h2>
                 <div class="resume-border"></div>
               </div>
               <div class="about-me">
-                  <h5>About Me</h5>
-                  <p>I'm a frontend developer with a catching eye for arts. I enjoy building aesthetically pleasing interfaces. I work efficiently within and without teams. I am an avid teamplayer and a coherent communicator. I aim to work hand in hand with other teamplayers to achieve exceptional results while bringing solution to common problems.</p>
+                  <h5>Summary</h5>
+                  <p class="text-justify">I'm a frontend developer with a catching eye for arts. I enjoy building aesthetically pleasing interfaces. I work efficiently within and without teams. I am an avid teamplayer and a coherent communicator. I aim to work hand in hand with other teamplayers to achieve exceptional results while bringing solution to common problems.</p>
+              </div>
+              <div class="marker d-lg-none text-center">
+                <span class="iconify" data-icon="akar-icons:more-horizontal-fill" style="color: #33748b;" data-width="200" data-height="70" data-flip="horizontal"></span>
               </div>
               <div class="about-history">
-                  <div class="about-education">
+                  <div class="about-education text-justify fade-in">
                     <div class="about-history-header">
                         <span class="iconify educ" data-icon="zondicons:education"></span>
                    <h4 class="edu">Education</h4>
                     </div>
                     <div class="hng">
-                        <span class="iconify pointer" data-icon="iconoir:cursor-pointer"></span>
+                       
                         <div class="zuri-header">
-                            <h6>Frontend Developer</h6>
-                           <p class="text-muted date">June 2021 - July 2021</p>
-                           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            <h6>She Codes Africa</h6>
+                           <p class="text-muted date">Feb 2021 - Present</p>
+                           <p>Virtual continuous learning and tutoring at the She Codes Africa Community
                            </p>
                         </div>
                     </div>
                     <div class="hng">
-                        <span class="iconify pointer" data-icon="iconoir:cursor-pointer"></span>
+                       
                         <div class="zuri-header">
-                            <h6>Frontend Developer</h6>
-                           <p class="text-muted date">June 2021 - July 2021</p>
-                           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.  
+                            <h6>The Net Ninja Udemy Class</h6>
+                           <p class="text-muted date">June 2021 - Present</p>
+                           <p>I have gone through series of virtual learning with the courses made available by the Net Ninja and followership of his youtube crash courses.
                            </p>
                         </div>
                     </div>
+                  
+
+                        <div class="zuri-header">
+                            <h6>Zuri/i4g Training</h6>
+                           <p class="text-muted date">June 2021 -July 2021</p>
+                           <p>At the Zuri training held this year, I completed the 1 month bootcamp organized in collaboration with Ingressive 4 Good.
+                           </p>
+                        </div>
+                    </div>
+                  
+
+                  <div class="marker d-lg-none text-center">
+                    <span class="iconify" data-icon="akar-icons:more-horizontal-fill" style="color: #33748b;" data-width="200" data-height="70" data-flip="horizontal"></span>
                   </div>
-                  <div class="about-experience">
+
+                  <div class="about-experience text-justify fade-in">
                    <div class="about-history-header">
                     <span class="iconify educ" data-icon="clarity:briefcase-solid"></span>
                     <h4 class="edu">Experience</h4> 
                    </div>
                     <div class="hng">
-                        <span class="iconify pointer" data-icon="iconoir:cursor-pointer"></span>
                        <div class="zuri-header">
-                        <h6>Frontend Developer</h6>
-                       <p class="text-muted date">May 2020 - July 2020</p>
-                       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        <h6>Frontend Web Developer at Foodbank.ng</h6>
+                       <p class="text-muted date">March 2021 - Present</p>
+                       <p> Working with a team of software developers in handling the tech affairs of the company. I also created the official website of the company from scratch and also overseeing its management and continuity.
                        </p>
                     </div>
                     </div>
+
                     <div class="hng">
-                        <span class="iconify pointer" data-icon="iconoir:cursor-pointer"></span>
                         <div class="zuri-header">
-                            <h6>Frontend Developer</h6>
-                           <p class="text-muted date">June 2021 - July 2021</p>
-                           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            <h6>Frontend Developer at Amber Groups</h6>
+                           <p class="text-muted date">April 2021 - May 2021</p>
+                           <p>Built a website used for job search needed by the company from scratch. Worked with their tech teams to achieve other tech-related solutions.
                            </p>
                         </div>
-                    </div>
-                  </div>
+                    </div>     
               </div>
               
-              <div class="about-skills bg-light">
-                <div class="skills ">
-                    <div class="skills-header">
+             
+              <div class="about-skills bg-light fade-in">
+                <div class="skills fade-in">
+                    <div class="skills-header ">
                         <span class="iconify spanner" data-icon="typcn:spanner-outline" style="color: #33748b;"></span>
                         <h4 class="pl-lg-2"> Coding Skills</h4>
                     </div>
@@ -148,23 +190,62 @@
                         <div class="skills-set">
                             <span class="iconify" data-icon="fa-solid:dot-circle" style="color: #33748b;"></span>
                             <p> HTML</p>
+                            <div class="stars">
+                                <span class="iconify" data-icon="emojione:star" style="color: #146f69; font-size: 10px;" data-rotate="90deg" data-flip="vertical"></span>
+                                <span class="iconify" data-icon="emojione:star" style="color: #146f69; font-size: 10px;" data-rotate="90deg" data-flip="vertical"></span>
+                                <span class="iconify" data-icon="emojione:star" style="color: #146f69; font-size: 10px;" data-rotate="90deg" data-flip="vertical"></span>
+                                <span class="iconify" data-icon="emojione:star" style="color: #146f69; font-size: 10px;" data-rotate="90deg" data-flip="vertical"></span>
+                                <span class="iconify" data-icon="emojione:star" style="color: #146f69; font-size: 10px;" data-rotate="90deg" data-flip="vertical"></span>
+                            </div>
                         </div>
-                        <div class="skills-set">
+                        <div class="skills-set fade-in">
                             <span class="iconify" data-icon="fa-solid:dot-circle" style="color: #33748b;"></span>
                             <p> CSS</p>
+                            <div class="stars">
+                                <span class="iconify" data-icon="emojione:star" style="color: #146f69; font-size: 10px;" data-rotate="90deg" data-flip="vertical"></span>
+                                <span class="iconify" data-icon="emojione:star" style="color: #146f69; font-size: 10px;" data-rotate="90deg" data-flip="vertical"></span>
+                                <span class="iconify" data-icon="emojione:star" style="color: #146f69; font-size: 10px;" data-rotate="90deg" data-flip="vertical"></span>
+                                <span class="iconify" data-icon="emojione:star" style="color: #146f69; font-size: 10px;" data-rotate="90deg" data-flip="vertical"></span>
+                                <span class="iconify" data-icon="emojione:star" style="color: #146f69; font-size: 10px;" data-rotate="90deg" data-flip="vertical"></span>
+                            </div>
+                        </div>
+                        <div class="skills-set ">
+                            <span class="iconify" data-icon="fa-solid:dot-circle" style="color: #33748b;"></span>
+                            <p> Bootstrap</p>
+                            <div class="stars">
+                                <span class="iconify" data-icon="emojione:star" style="color: #146f69; font-size: 10px;" data-rotate="90deg" data-flip="vertical"></span>
+                                <span class="iconify" data-icon="emojione:star" style="color: #146f69; font-size: 10px;" data-rotate="90deg" data-flip="vertical"></span>
+                                <span class="iconify" data-icon="emojione:star" style="color: #146f69; font-size: 10px;" data-rotate="90deg" data-flip="vertical"></span>
+                                <span class="iconify" data-icon="emojione:star" style="color: #146f69; font-size: 10px;" data-rotate="90deg" data-flip="vertical"></span>
+                                <span class="iconify" data-icon="emojione:star" style="color: #146f69; font-size: 10px;" data-rotate="90deg" data-flip="vertical"></span>
+                            </div>
                         </div>
                         <div class="skills-set">
                             <span class="iconify" data-icon="fa-solid:dot-circle" style="color: #33748b;"></span>
                             <p> Javascript</p>
+                            <div class="stars">
+                                <span class="iconify" data-icon="emojione:star" style="color: #146f69; font-size: 10px;" data-rotate="90deg" data-flip="vertical"></span>
+                                <span class="iconify" data-icon="emojione:star" style="color: #146f69; font-size: 10px;" data-rotate="90deg" data-flip="vertical"></span>
+                                <span class="iconify" data-icon="emojione:star" style="color: #146f69; font-size: 10px;" data-rotate="90deg" data-flip="vertical"></span>
+                                <span class="iconify" data-icon="emojione:star" style="color: #146f69; font-size: 10px;" data-rotate="90deg" data-flip="vertical"></span>
+                                <span class="iconify" data-icon="el:star-empty" style="color: rgb(233, 233, 124); font-size: 10px;" data-rotate="90deg" data-flip="vertical"></span>
+                            </div>
                         </div>
                         <div class="skills-set">
                             <span class="iconify" data-icon="fa-solid:dot-circle" style="color: #33748b;"></span>
                             <p> Scss</p>
+                            <div class="stars">
+                                <span class="iconify" data-icon="emojione:star" style="color: #146f69; font-size: 10px;" data-rotate="90deg" data-flip="vertical"></span>
+                                <span class="iconify" data-icon="emojione:star" style="color: #146f69; font-size: 10px;" data-rotate="90deg" data-flip="vertical"></span>
+                                <span class="iconify" data-icon="emojione:star" style="color: #146f69; font-size: 10px;" data-rotate="90deg" data-flip="vertical"></span>
+                                <span class="iconify" data-icon="emojione:star" style="color: #146f69; font-size: 10px;" data-rotate="90deg" data-flip="vertical"></span>
+                                <span class="iconify" data-icon="emojione:star" style="color: #146f69; font-size: 10px;" data-rotate="90deg" data-flip="vertical"></span>
+                            </div>
                         </div>
 
                     </div>
                 </div>
-                <div class="skills">
+                <div class="skills fade-in">
                     <div class="skills-header">
                         <span class="iconify spanner" data-icon="typcn:spanner-outline" style="color: #33748b;"></span>
                         <h4 class="pl-lg-2"> Tools</h4>
@@ -172,24 +253,113 @@
                    <div class="personal-skills card shadow">
                     <div class="skills-set ">
                         <span class="iconify" data-icon="fa-solid:dot-circle" style="color: #33748b;"></span>
-                        <p>Visual Studio Code</p>
+                        <p>VS Code</p>
+                        <div class="stars">
+                            <span class="iconify" data-icon="emojione:star" style="color: #146f69; font-size: 10px;" data-rotate="90deg" data-flip="vertical"></span>
+                            <span class="iconify" data-icon="emojione:star" style="color: #146f69; font-size: 10px;" data-rotate="90deg" data-flip="vertical"></span>
+                            <span class="iconify" data-icon="emojione:star" style="color: #146f69; font-size: 10px;" data-rotate="90deg" data-flip="vertical"></span>
+                            <span class="iconify" data-icon="emojione:star" style="color: #146f69; font-size: 10px;" data-rotate="90deg" data-flip="vertical"></span>
+                            <span class="iconify" data-icon="emojione:star" style="color: #146f69; font-size: 10px;" data-rotate="90deg" data-flip="vertical"></span>
+                        </div>
                     </div>
                     <div class="skills-set">
                         <span class="iconify" data-icon="fa-solid:dot-circle" style="color: #33748b;"></span>
                         <p> Github</p>
+                        <div class="stars">
+                            <span class="iconify" data-icon="emojione:star" style="color: #146f69; font-size: 10px;" data-rotate="90deg" data-flip="vertical"></span>
+                            <span class="iconify" data-icon="emojione:star" style="color: #146f69; font-size: 10px;" data-rotate="90deg" data-flip="vertical"></span>
+                            <span class="iconify" data-icon="emojione:star" style="color: #146f69; font-size: 10px;" data-rotate="90deg" data-flip="vertical"></span>
+                            <span class="iconify" data-icon="emojione:star" style="color: #146f69; font-size: 10px;" data-rotate="90deg" data-flip="vertical"></span>
+                            <span class="iconify" data-icon="emojione:star" style="color: #146f69; font-size: 10px;" data-rotate="90deg" data-flip="vertical"></span>
+                        </div>
+                    </div>
+                    <div class="skills-set">
+                        <span class="iconify" data-icon="fa-solid:dot-circle" style="color: #33748b;"></span>
+                        <p> Codepen</p>
+                        <div class="stars">
+                            <span class="iconify" data-icon="emojione:star" style="color: #146f69; font-size: 10px;" data-rotate="90deg" data-flip="vertical"></span>
+                            <span class="iconify" data-icon="emojione:star" style="color: #146f69; font-size: 10px;" data-rotate="90deg" data-flip="vertical"></span>
+                            <span class="iconify" data-icon="emojione:star" style="color: #146f69; font-size: 10px;" data-rotate="90deg" data-flip="vertical"></span>
+                            <span class="iconify" data-icon="emojione:star" style="color: #146f69; font-size: 10px;" data-rotate="90deg" data-flip="vertical"></span>
+                            <span class="iconify" data-icon="el:star-empty" style="color: rgb(228, 228, 130); font-size: 10px;" data-rotate="90deg" data-flip="vertical"></span>
+                        </div>
                     </div>
                     <div class="skills-set">
                         <span class="iconify" data-icon="fa-solid:dot-circle" style="color: #33748b;"></span>
                         <p> Slack</p>
+                        <div class="stars">
+                            <span class="iconify" data-icon="emojione:star" style="color: #146f69; font-size: 10px;" data-rotate="90deg" data-flip="vertical"></span>
+                            <span class="iconify" data-icon="emojione:star" style="color: #146f69; font-size: 10px;" data-rotate="90deg" data-flip="vertical"></span>
+                            <span class="iconify" data-icon="emojione:star" style="color: #146f69; font-size: 10px;" data-rotate="90deg" data-flip="vertical"></span>
+                            <span class="iconify" data-icon="emojione:star" style="color: #146f69; font-size: 10px;" data-rotate="90deg" data-flip="vertical"></span>
+                            <span class="iconify" data-icon="emojione:star" style="color: #146f69; font-size: 10px;" data-rotate="90deg" data-flip="vertical"></span>
+                        </div>
                     </div>
                     <div class="skills-set">
                         <span class="iconify" data-icon="fa-solid:dot-circle" style="color: #33748b;"></span>
                         <p> Figma</p>
+                        <div class="stars">
+                            <span class="iconify" data-icon="emojione:star" style="color: #146f69; font-size: 10px;" data-rotate="90deg" data-flip="vertical"></span>
+                            <span class="iconify" data-icon="emojione:star" style="color: #146f69; font-size: 10px;" data-rotate="90deg" data-flip="vertical"></span>
+                            <span class="iconify" data-icon="emojione:star" style="color: #146f69; font-size: 10px;" data-rotate="90deg" data-flip="vertical"></span>
+                            <span class="iconify" data-icon="emojione:star" style="color: #146f69; font-size: 10px;" data-rotate="90deg" data-flip="vertical"></span>
+                            <span class="iconify" data-icon="emojione:star" style="color: #146f69; font-size: 10px;" data-rotate="90deg" data-flip="vertical"></span>
+                        </div>
                     </div>
                    </div>
                 </div>
               </div>
+
+              <div class="about-contact">
+
+                <div class="about-portfolio text-justify fade-in">
+                    <div class="about-history-header">
+                        <span class="iconify" data-icon="dashicons:portfolio" style="color: #33748b;" data-width="40" data-height="50" data-flip="horizontal"></span>
+                   <h4 class="edu">Recent Projects</h4>
+                    </div>
+                    <div class="hng">
+                        <div class="port-header">
+                            <h6>Foodbank.ng Landing page</h6>
+                           <a  href="http://foodbank.ng/">Visit website</a>
+                           <p> <span>"</span>
+                               A landing page that anchors prospective customers into what the foodbank initiative is about. <span>"</span>
+                           </p>
+                        </div>
+                    </div>
+    
+                    <div class="hng">
+                        <div class="port-header">
+                            <h6>Amber Career Project</h6>
+                           <a  href="https://yemi-dev.github.io/Amber-Career-Project/">Find Jobs!</a>
+                           <p> <span>"</span>
+                               A career innovative website that makes it easier to search for available jobs online. <span>"</span>
+                           </p>
+                        </div>
+                    </div>
+    
+                    <div class="hng">
+                        <div class="port-header">
+                            <h6>Makeup Website</h6>
+                          <a href="https://yemi-dev.github.io/makeup-website/contact_form.html">Makeup website</a>
+                          <p> <span>"</span>
+                            A website that showcases the portfolio of a makeup artist. <span>"</span>
+                        </p>
+                        </div>
+                    </div>
+                  </div>
+    
+                  <div class="marker d-lg-none text-center">
+                    <span class="iconify" data-icon="akar-icons:more-horizontal-fill" style="color: #33748b;" data-width="200" data-height="70" data-flip="horizontal"></span>
+                  </div>  
+              </div>
           </div>
+          
       </main>
+
+      <footer class="text-muted text-center">
+        <p><small>Copyright &copy; 2021 Akinyemi Oluwayemisi. <br> All rights reserved.</small></p>
+    </footer>
+
+     <script src="resume.js"></script> 
 </body>
 </html>

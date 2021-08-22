@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase&family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase&family=Cormorant+Upright:wght@300;400&family=Dancing+Script:wght@400;500;600;700&display=swap');
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -5,15 +8,47 @@
 }
 body {
     background-image: url('https://cdn.wallpapersafari.com/41/17/SG14UK.jpg');
+    background-repeat: no-repeat;
+    object-fit: contain;
+    position: relative;
+    font-family: 'Cormorant Unicase', serif;
 }
 nav{
     background:whitesmoke;
+    display: flex;
+    
 }
 .active-link {
-    background-color:rgb(51, 116, 139);
+    background-color:transparent;
+    border: 1px solid rgb(51, 116, 139);
     font-size: 1rem;
     border-radius: 5px;
+    color: rgb(51, 116, 139);
+}
+.active-link:active {
     color: white;
+    background-color: rgba(107, 176, 199, 0.6);
+}
+.active-link:hover {
+   animation-name: hover;
+   animation-duration: 1s;
+   animation-timing-function: linear;
+   animation-direction: alternate;
+   cursor: pointer;
+}
+@keyframes hover {
+    0% {
+        background-color:transparent;
+        color: white;
+    }
+    50% {
+        background-color: rgba(107, 176, 199, 0.6);
+        color: white;
+    }
+    100% {
+        background-color: rgba(69, 157, 187, 0.6);
+        color: white;
+    }
 }
 main{
     margin-top: 10rem;
@@ -27,19 +62,27 @@ main{
     padding-top: 10rem;
     height: fit-content;
     padding-bottom: 2rem;
+    transform: translateX(-200px);
+    transition: transform 1s ease-in;
+    
     
 }
 .card-img {
     border: whitesmoke;
     border-radius: 20%;
     width: 60%;
+    object-fit: cover;
     position: absolute;
     top: -6rem;
     right: 20%;
 }
+
 .role {
     background:rgba(245, 245, 245, 0.596);
-    color: gray
+    color: gray;
+    width:fit-content;
+    font-family: 'Cormorant Upright', serif;
+    
 }
 .socials{
     margin-top: -1rem;
@@ -58,6 +101,7 @@ main{
 }
 .infos p{
     font-size: .8rem;
+    font-family: 'Cormorant Upright', serif;
 }
 .infos .iconify{
     font-size: 1.5rem;
@@ -65,7 +109,12 @@ main{
 }
 .about-main {
     width: 65%;
-    padding: 1rem 3rem;
+    padding: 1rem 5rem;
+    transform: translateX(150px);
+    transition: transform 2s ease-in;
+}
+.info-main.appear, .about-main.appear {
+    transform: translateX(0);
 }
 .sponsors-img {
     display: flex;
@@ -79,19 +128,42 @@ main{
 }
 .resume {
     margin: 1rem 0;
+    font-family: 'Cormorant Unicase', serif;
 }
 .resume-border {
-    width: 3rem;
-    height: .4rem;
+    width: 4rem;
+    height: .3rem;
     border-radius: 10px;
     background-color: rgb(51, 116, 139);
+    animation-name: width;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
+   
+
 }
-.about-history {
-    display: flex;
-    justify-content: space-between;
+@keyframes width {
+    0% {width: 0;
+        background-color: rgb(147, 196, 214);
+    }
+    100% {
+        width: 4rem;
+        background-color: rgb(51, 116, 139);
+    }
 }
+.about-me h5 {
+    font-family: 'Cormorant Unicase', serif;
+}
+.about-me p{
+    font-family: 'Cormorant Upright', serif;
+}
+/* .about-history {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+    
+
 .about-education, .about-experience{
-    width: 48%;
+    width: 100%;
 }
 .about-history-header{
     display: flex;
@@ -99,25 +171,38 @@ main{
     margin: 1rem 0; 
 }
 .about-history-header .educ{
-    font-size: 1.7rem;
+    font-size: 2.5rem;
     color:rgb(51, 116, 139);
 }
 .edu {
-    width: 90%;
+    width: 80%;
+    font-size: 1.7rem;
+    font-family: 'Cormorant Unicase', serif;
+    font-weight: 800;
 }
 .hng{
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
+    margin-bottom: 2.5rem;
 }
 .hng .pointer{
     color:rgb(51, 116, 139);
+    font-weight: 800;
 }
 .zuri-header{
-    width: 90%;
+    width: 100%;
+}
+.zuri-header h6{
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+.zuri-header p, .port-header p{
+    font-family: 'Cormorant Upright', serif;
 }
 .zuri-header .date{
     font-size: .8rem;
 }
+
 
 .about-skills {
     display: flex;
@@ -143,15 +228,122 @@ main{
     justify-content: space-between;
 }
 .skills-set p{
-    width: 80%;
+    width: 40%;
 }
 .skills-set .pointer{
     color:rgb(51, 116, 139);
-    font-size: .8rem;
+    
     font-weight: 200;
 }
+.stars {
+    display: flex;
+}
+.stars .iconify{
+    display: flex;
+    font-size: 20px;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+}
+.fade-in.appear {
+    opacity: 1;
+}
+
+/* burger-menu */
+ burger-menu {
+  display: none;
+} 
+     
+      
+    
+
+   /* .burger-menu.open, .burger-menu-btn {
+       
+    } 
+    */
+    .exit {
+        padding: .3rem .6rem;
+    }
+
+    .exit:hover, .burger-menu:hover{
+        border: 1px solid rgb(51, 116, 139);
+        border-radius: 5px;
+    }
+
+
+    .side-nav {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .side-nav li {
+        list-style: none;
+        margin-top: 2rem;
+    }
+   
+    .link-item {
+        font-size: 2rem;
+        padding: .2rem .6rem;
+    }
+    .link-item .active-link {
+        border: none;
+    }
+  
+    .link-item .active-link:hover {
+        animation-name: hover;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-direction: alternate;
+        cursor: pointer;
+     }
+     @keyframes hover {
+         0% {
+             background-color:transparent;
+             color: white;
+         }
+         50% {
+             background-color: rgba(107, 176, 199, 0.6);
+             color: white;
+         }
+         100% {
+             background-color: rgba(69, 157, 187, 0.6);
+             color: white;
+         }
+     }
+     .port-header h6{
+         font-size: 1.2rem;
+         font-weight: 700;
+     }
+     .port-header a{
+         font-size: .8rem;
+         font-weight: 700;
+         font-family: cursive;
+         color:  rgb(51, 116, 139);
+     }
+
+     .port-header span{
+         font-size: 3.2rem;
+         font-weight: 700;
+         color:  rgb(51, 116, 139);
+         font-family: fantasy
+     }
+
+     .footer small{
+        font-size: .4rem;
+    }
+ 
 
 @media only screen and (max-width: 768.98px){
+    .nav {
+        display: none;
+    }
+    .burger-menu {
+        display: block;
+    }
     .info-main{
         width: 30%;
         padding-top: 7rem;
@@ -173,12 +365,19 @@ main{
         width: 90%;
         padding-top: 7rem;
         margin-bottom: 2rem;
+    }
 
+    .info-contact {
+        padding: 1rem 1.5rem;
+    }
+    .info-contact p{
+         font-size: 1rem;
     }
     .card-img{
-        width: 40%; 
+        width: 60%; 
+        height: 250px;
         top: -9rem;
-        right: 30%;
+        right: 20%;
     }
     .about-main{
         width: 90%;
@@ -193,12 +392,14 @@ main{
         margin-bottom: 1rem;
     }
 }
+
+
 @media only screen and (max-width:420px){
     main{
         margin-top: 10rem;
     }
     .info-main{
-        padding-top: 6rem;
+        padding-top: 10rem;
     }
     .card-img{
         top: -6rem;
@@ -207,13 +408,14 @@ main{
         flex-direction: column;
     }
     .about-education, .about-experience{
-        width: 90%;  
+        width: 100%;  
+        text-align: justify;
     }
     .edu{
         width: 80%;
     }
     .zuri-header{
-        width: 80%;
+        width: 100%;
     }
 }
 

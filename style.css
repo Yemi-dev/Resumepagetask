@@ -319,9 +319,8 @@ main{
          font-weight: 700;
      }
      .port-header a{
-         font-size: .8rem;
+         font-size: 1rem;
          font-weight: 700;
-         font-family: cursive;
          color:  rgb(51, 116, 139);
          margin: 1rem 0;
      }
@@ -330,7 +329,7 @@ main{
          font-size: 2.2rem;
          font-weight: 700;
          color:  rgb(51, 116, 139);
-         font-family: fantasy
+         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
      }
 
      .footer small{

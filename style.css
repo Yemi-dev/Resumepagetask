@@ -323,10 +323,11 @@ main{
          font-weight: 700;
          font-family: cursive;
          color:  rgb(51, 116, 139);
+         margin: 1rem 0;
      }
 
      .port-header span{
-         font-size: 3.2rem;
+         font-size: 2.2rem;
          font-weight: 700;
          color:  rgb(51, 116, 139);
          font-family: fantasy
